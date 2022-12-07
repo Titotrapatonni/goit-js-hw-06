@@ -7,7 +7,7 @@ formEl.addEventListener("submit", onSubmit);
 function onSubmit(event) {
   event.preventDefault();
 
-  if (emailInputEl.value === "" || pswrdInputEl.value === "") {
+  if (emailInputEl.value.trim() === "" || pswrdInputEl.value.trim() === "") {
     alert("Все поля должны быть заполнены");
   } else {
     userData.email = emailInputEl.value;
